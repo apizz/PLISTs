@@ -1,0 +1,33 @@
+## com.apple.Safari.plist
+
+- Disable credit card autofill
+- Disable address book autofill
+- Disable password autofill
+- Disable misc. form autofill
+- Don't auto-open "safe" downloads
+- Never prompt users to add accounts to Internet Accounts System Preferences pane following successful account login at specified domains
+	- AOL
+	- Facebook
+	- Flickr
+	- Google
+	- Twitter
+	- Vimeo
+	- Yahoo
+	- Hotmail
+	- Cox
+	- MSN
+	- AT&T
+	- Verizon Wireless
+	- Verizon
+	- Time Warner Cable
+	- Charter
+	- Comcast
+	- Gmail
+	- Zoho
+	- iCloud
+	- Apple.com
+	- me.com
+	- AIM (RIP)
+	- Mail.com
+	- Fastmail.fm
+	- Earthlink
