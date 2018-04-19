@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditRegisteredOwner:11.0</key>
+	<string>ORGANIZATION</string>
+	<key>BBEditRegisteredOwner:12.0</key>
+	<string>ORGANIZATION</string>
+	<key>BBEditSerialNumber:11.0</key>
+	<string>BEC110-XXXXX-XXXXX-XXXXX</string>
+	<key>BBEditSerialNumber:12.0</key>
+	<string>BEC120-XXXXX-XXXXX-XXXXX</string>
+	<key>SUAutomaticallyUpdate</key>
+	<false/>
+	<key>SUEnableAutomaticChecks</key>
+	<false/>
+	<key>SUFeedURL</key>
+	<string>https://127.0.0.1</string>
+</dict>
+</plist>
