@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ADDomain</key>
+	<string>themastersschool.com</string>
+	<key>GetHelpOptions</key>
+	<string>https://mail.themastersschool.com/owa/#viewmodel=IMailComposeViewModelFactory</string>
+	<key>GetHelpType</key>
+	<string>URL</string>
+	<key>HideLockScreen</key>
+	<true/>
+	<key>HidePrefs</key>
+	<true/>
+	<key>HideRenew</key>
+	<true/>
+	<key>HideSignOut</key>
+	<true/>
+	<key>KerberosRealm</key>
+	<string>THEMASTERSSCHOOL.COM</string>
+	<key>LocalPasswordSync</key>
+	<true/>
+	<key>LocalPasswordSyncDontSyncLocalUsers</key>
+	<array>
+		<string>admin</string>
+		<string>arduser</string>
+	</array>
+	<key>MenuChangePassword</key>
+	<string>Change Masters Password</string>
+	<key>MenuGetHelp</key>
+	<string>Email Helpdesk</string>
+	<key>MenuGetSoftware</key>
+	<string>Masters Self Service</string>
+	<key>MenuHomeDirectory</key>
+	<string>Connect to Panther</string>
+	<key>MessagePasswordChangePolicy</key>
+	<string>Your new password must have at least:***8 characters,***1 lowercase letter,***1 uppercase letter,***and 1 number or symbol.</string>
+	<key>PasswordExpireAlertTime</key>
+	<integer>1814400</integer>
+	<key>PasswordExpireCustomAlertTime</key>
+	<integer>21</integer>
+	<key>PasswordPolicy</key>
+	<dict>
+		<key>minLength</key>
+		<string>8</string>
+		<key>minLowerCase</key>
+		<string>1</string>
+		<key>minMatches</key>
+		<string>3</string>
+		<key>minNumber</key>
+		<string>1</string>
+		<key>minSymbol</key>
+		<string>1</string>
+		<key>minUpperCase</key>
+		<string>1</string>
+	</dict>
+	<key>PersistExpiration</key>
+	<true/>
+	<key>RenewTickets</key>
+	<true/>
+	<key>SecondsToRenew</key>
+	<integer>7200</integer>
+	<key>SelfServicePath</key>
+	<string>/Applications/Masters\ Self\ Service.app</string>
+	<key>ShowHome</key>
+	<true/>
+	<key>TitleSignIn</key>
+	<string>Masters Password Sync</string>
+	<key>UPCAlert</key>
+	<false/>
+	<key>UseKeychain</key>
+	<true/>
+	<key>UserCommandName1</key>
+	<string>Troubleshoot Network</string>
+	<key>UserCommandTask1</key>
+	<string>open -a Helpdesk\ FirstAid</string>
+</dict>
+</plist>

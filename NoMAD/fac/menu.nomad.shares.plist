@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HomeMount</key>
+	<dict>
+		<key>Groups</key>
+		<array>
+			<string>All</string>
+		</array>
+		<key>Mount</key>
+		<true/>
+		<key>Options</key>
+		<array/>
+	</dict>
+	<key>Shares</key>
+	<array>
+		<dict>
+			<key>AutoMount</key>
+			<false/>
+			<key>ConnectedOnly</key>
+			<true/>
+			<key>Groups</key>
+			<array>
+				<string>adminsec</string>
+				<string>helpdesksec</string>
+				<string>msfacsec</string>
+				<string>usfacsec</string>
+			</array>
+			<key>LocalMount</key>
+			<string></string>
+			<key>Name</key>
+			<string>Faculty Evaluations</string>
+			<key>Options</key>
+			<array/>
+			<key>URL</key>
+			<string>smb://panther.themastersschool.com/Academics/FacultyEvaluations</string>
+		</dict>
+		<dict>
+			<key>AutoMount</key>
+			<false/>
+			<key>ConnectedOnly</key>
+			<true/>
+			<key>Groups</key>
+			<array>
+				<string>APExams</string>
+			</array>
+			<key>LocalMount</key>
+			<string></string>
+			<key>Name</key>
+			<string>AP Exams</string>
+			<key>Options</key>
+			<array/>
+			<key>URL</key>
+			<string>smb://panther.themastersschool.com/Academics/APExams</string>
+		</dict>
+	</array>
+	<key>Version</key>
+	<string>1</string>
+</dict>
+</plist>

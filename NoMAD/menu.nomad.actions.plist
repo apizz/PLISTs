@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Troubleshoot Network</string>
+			<key>ToolTip</key>
+			<string>Run Helpdesk FirstAid to troubleshoot network connectivity</string>
+			<key>Show</key>
+			<array>
+				<dict>
+					<key>Command</key>
+					<string>path</string>
+					<key>CommandOptions</key>
+					<string>[ -d "/Applications/Helpdesk FirstAid.app" ]</string>
+				</dict>
+			</array>
+			<key>Action</key>
+			<array>
+				<dict>
+					<key>Command</key>
+					<string>app</string>
+					<key>CommandOptions</key>
+					<string>/Applications/Helpdesk FirstAid.app</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Reset AirPlay</string>
+			<key>ToolTip</key>
+			<string>Cycles Wifi to reset AirPlay and refresh the Apple TV list</string>
+			<key>Show</key>
+			<array>
+				<dict>
+					<key>Command</key>
+					<string>path</string>
+					<key>CommandOptions</key>
+					<string>/usr/sbin/system_profiler SPHardwareDataType | /usr/bin/awk '/Model Identifier/{print $NF}' | /usr/bin/grep "Book"</string>
+				</dict>
+			</array>
+			<key>Action</key>
+			<array>
+				<dict>
+					<key>Command</key>
+					<string>path</string>
+					<key>CommandOptions</key>
+					<string>/Library/Scripts/TMS_Script_Resources/cyclewifi.sh</string>
+				</dict>
+			</array>
+			<key>Post</key>
+			<array>
+				<dict>
+					<key>Command</key>
+					<string>notify</string>
+					<key>CommandOptions</key>
+					<string>AirPlay reset complete</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>separator</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Last Restart</string>
+			<key>ToolTip</key>
+			<string>Shows the last time this computer was restarted</string>
+			<key>Action</key>
+			<array>
+				<dict>
+					<key>Command</key>
+					<string>path</string>
+					<key>CommandOptions</key>
+					<string>/usr/sbin/sysctl kern.boottime | /usr/bin/awk -F'[= |,]' '{print $6}'</string>
+				</dict>
+				<dict>
+					<key>Command</key>
+					<string>path</string>
+					<key>CommandOptions</key>
+					<string>/bin/date -jf "%s" &lt;&lt;result&gt;&gt; +"%m-%d-%Y %T"</string>
+				</dict>
+			</array>
+			<key>Post</key>
+			<array>
+				<dict>
+					<key>Command</key>
+					<string>notify</string>
+					<key>CommandOptions</key>
+					<string>Last Restart: &lt;&lt;result&gt;&gt;</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>MenuIcon</key>
+	<true/>
+	<key>Version</key>
+	<integer>1</integer>
+</dict>
+</plist>

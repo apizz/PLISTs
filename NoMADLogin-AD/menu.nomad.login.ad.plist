@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ADDomain</key>
+	<string>themastersschool.com</string>
+	<key>BackgroundImage</key>
+	<string>/Library/Caches/com.apple.desktop.admin.png</string>
+	<key>CreateAdminUser</key>
+	<false/>
+	<key>DemobilizeUsers</key>
+	<true/>
+	<key>LoginLogo</key>
+	<string>/Library/Scripts/TMS_Script_Resources/Masters_Seal_500x500.png</string>
+	<key>LoginScreen</key>
+	<true/>
+</dict>
+</plist>
